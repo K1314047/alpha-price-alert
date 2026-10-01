@@ -1,0 +1,16 @@
+[Unit]
+Description=Alpha Price Alert
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_LINUX_USER
+WorkingDirectory=/opt/alpha-price-alert
+ExecStart=/opt/alpha-price-alert/.venv/bin/python -u /opt/alpha-price-alert/app.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

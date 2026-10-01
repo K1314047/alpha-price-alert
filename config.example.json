@@ -1,0 +1,10 @@
+{
+  "symbols": ["UB", "AEON", "ARP", "GRVT", "QUID", "POWER", "DOS", "EDGE"],
+  "threshold_percent": 5,
+  "check_interval": 10,
+  "timezone": "Asia/Shanghai",
+  "telegram": {
+    "bot_token": "REPLACE_WITH_A_NEW_BOT_TOKEN",
+    "chat_id": "REPLACE_WITH_YOUR_CHAT_ID"
+  }
+}
